@@ -1,0 +1,31 @@
+package team.foura.backend.model.dto;
+
+/**
+ *
+ * @param name
+ * @param price
+ * @param coreCount
+ * @param coreClock
+ * @param boostClock
+ * @param tdp
+ * @param integratedGraphics
+ * @param socket
+ * @param smt
+ *
+ * @author Arman Hakhverdyan
+ *
+ * An Immutable DataTransferObject of CPU for service layer.
+ */
+public record CpuDTO(
+        String     name,
+        Double     price,
+        Integer    coreCount,
+        Integer    coreClock,
+        Integer    boostClock,
+        Integer    tdp,
+        String     integratedGraphics,
+        String     socket,
+        String     smt
+) {
+    //equals and hashcode
+}
